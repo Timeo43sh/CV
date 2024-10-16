@@ -166,6 +166,32 @@
             background-color: #025aa5;
         }
 
+        /* Mode sombre pour les compétences */
+body.dark-mode .skills ul li {
+    background-color: #333; /* Couleur de fond en mode sombre */
+    color: #fff; /* Couleur du texte en mode sombre */
+}
+
+/* Effet hover en mode sombre pour les compétences */
+body.dark-mode .skills ul li:hover {
+    background-color: #4aa3f7; /* Couleur de fond au survol en mode sombre */
+    color: #fff;
+}
+
+/* Mode sombre pour les intérêts */
+body.dark-mode .interests ul li {
+    background-color: #333; /* Couleur de fond en mode sombre */
+    color: #fff; /* Couleur du texte en mode sombre */
+}
+
+/* Effet hover en mode sombre pour les intérêts */
+body.dark-mode .interests ul li:hover {
+    background-color: #4aa3f7; /* Couleur de fond au survol en mode sombre */
+    color: #fff;
+}
+
+
+
         /* Improved skills and interests */
         .skills ul,
         .interests ul {
@@ -256,6 +282,16 @@
                     <li>Participation à la migration des systèmes vers des solutions cloud.</li>
                 </ul>
             </div>
+
+            <div class="experience-item">
+                <h3>Alternant Informatique - Nergeco Assa Abloy</h3>
+                <p class="date-location">02 Septembre 2024 -  | Dunière</p>
+                <ul class="responsibilities">
+                    <li>Support aux utilisateurs.</li>
+                    <li>Gestion des infrastructures.</li>
+                </ul>
+            </div>
+
         </div>
 
         <div class="section">
@@ -303,16 +339,16 @@
 
     <!-- Bouton mode sombre -->
     <div class="moon-container">
-        <i class="moon-icon">Sombre</i>
+        <i class="moon-icon">🌙</i>
     </div>
 
 <!-- Boutons LinkedIn et GitHub avec logo -->
 <div class="social-links">
     <a href="https://www.linkedin.com/in/votreprofil" target="_blank" class="social-btn linkedin-btn">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon"> LinkedIn
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon"> 
     </a>
     <a href="https://github.com/votreprofil" target="_blank" class="social-btn github-btn">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="social-icon"> GitHub
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="social-icon"> 
     </a>
 </div>
 
@@ -371,19 +407,19 @@
     }
 
     .linkedin-btn {
-        background-color: #0077b5;
+        background-color: #d5c8c8;
     }
 
     .github-btn {
-        background-color: #333;
+        background-color: #d5c8c8;
     }
 
     .linkedin-btn:hover {
-        background-color: #005582;
+        background-color: #fff;
     }
 
     .github-btn:hover {
-        background-color: #1b1b1b;
+        background-color: #fff;
     }
 
     @media (max-width: 768px) {
@@ -434,3 +470,4 @@
 </body>
 
 </html>
+
