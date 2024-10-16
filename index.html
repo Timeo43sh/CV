@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Timéo Gayte</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #1d1e22;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: #0275d8;
+        }
+
+        h2 {
+            border-bottom: 3px solid #0275d8;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        h2.section-title {
+            color: #0275d8;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .skills,
+        .interests {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .skills div,
+        .interests div {
+            flex: 1;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0275d8;
+        }
+
+        a:hover {
+            color: #014a85;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            width: 160px;
+            padding: 12px 20px;
+            margin: 40px auto 0;
+            background-color: #0275d8;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #025aa5;
+        }
+
+        /* Dark Mode Styling */
+        body.dark-mode {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        .container.dark-mode {
+            background-color: #1e1e1e;
+        }
+
+        .section-title.dark-mode {
+            color: #4aa3f7;
+        }
+
+        .moon-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #0275d8;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .moon-container:hover {
+            background-color: #025aa5;
+        }
+
+        .moon-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .download-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #0275d8;
+            color: white;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            background-color: #025aa5;
+        }
+
+        /* Improved skills and interests */
+        .skills ul,
+        .interests ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li,
+        .interests ul li {
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .skills ul li:hover,
+        .interests ul li:hover {
+            background-color: #0275d8;
+            color: white;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .skills,
+            .interests {
+                flex-direction: column;
+            }
+
+            .moon-container {
+                left: 10px;
+            }
+
+            .download-btn {
+                right: 10px;
+            }
+        }
+
+        /* Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>CV Timéo Gayte</h1>
+            <p>Email : timeo@gmail.com | Téléphone : 00 01 02 03 04</p>
+            <p>Adresse : 114 avenu du pré, Saint-Etienne</p>
+        </div>
+
+        <div class="section">
+            <h2 class="dark-mode">Expériences Professionnelles</h2>
+            <div class="experience-item">
+                <h3>Stagiaire BSI - SDIS 42</h3>
+                <p class="date-location">(24 janvier 2022 - 11 février 2022) | Saint-Etienne</p>
+                <ul class="responsibilities">
+                    <li>Participation à l'audit et la maintenance des systèmes d'information.</li>
+                    <li>Assistance technique sur le terrain et résolution de problèmes réseau.</li>
+                </ul>
+            </div>
+    
+            <div class="experience-item">
+                <h3>Stagiaire - Buro 1</h3>
+                <p class="date-location">(20 juin 2022 - 08 juillet 2022) | Saint-Etienne</p>
+                <ul class="responsibilities">
+                    <li>Développement et configuration de systèmes bureautiques.</li>
+                    <li>Support technique aux utilisateurs et mise à jour des postes de travail.</li>
+                </ul>
+            </div>
+    
+            <div class="experience-item">
+                <h3>Stagiaire DSI - École Nationale Supérieure des Mines</h3>
+                <p class="date-location">(03 janvier 2023 - 03 février 2023 | 24 avril 2023 - 12 mai 2023) | Saint-Etienne</p>
+                <ul class="responsibilities">
+                    <li>Gestion et surveillance du réseau informatique de l'institution.</li>
+                    <li>Déploiement de nouvelles solutions logicielles pour les étudiants et le personnel.</li>
+                </ul>
+            </div>
+    
+            <div class="experience-item">
+                <h3>Stagiaire DNUM - Université Jean Monnet</h3>
+                <p class="date-location">(27 novembre 2023 - 22 décembre 2023 | 04 mars 2024 - 29 mars 2024) | Saint-Etienne</p>
+                <ul class="responsibilities">
+                    <li>Support aux utilisateurs pour les applications métiers de l'université.</li>
+                    <li>Participation à la migration des systèmes vers des solutions cloud.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Formation</h2>
+            <div class="formation">
+                <div class="formation-card">
+                    <h3>BAC Professionnel Système Numérique</h3>
+                    <p>Lycée Privé Professionnel Le Marais Sainte-Thérèse</p>
+                    <p>(2021 - 2024)</p>
+              </div>
+
+                <div class="formation-card">
+                    <h3>Diplôme National du Brevet</h3>
+                    <p>Collège des Georges de la Loire</p>
+                    <p>(2017 - 2021)</p>
+                </div>
+
+        <div class="section">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills">
+                <ul>
+                    <li>Windows</li>
+                    <li>Ubuntu</li>
+                    <li>Réseaux</li>
+                    <li>Autonomie</li>
+                    <li>Sérieux</li>
+                    <li>Ponctualité</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Intérêts</h2>
+            <div class="interests">
+                <ul>
+                    <li>Nouvelles technologies</li>
+                    <li>Informatique et réseaux</li>
+                    <li>Football</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="#" class="back-to-top">Revenir en haut</a>
+    </div>
+
+    <!-- Bouton mode sombre -->
+    <div class="moon-container">
+        <i class="moon-icon">Sombre</i>
+    </div>
+
+<!-- Boutons LinkedIn et GitHub avec logo -->
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/votreprofil" target="_blank" class="social-btn linkedin-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon"> LinkedIn
+    </a>
+    <a href="https://github.com/votreprofil" target="_blank" class="social-btn github-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="social-icon"> GitHub
+    </a>
+</div>
+
+<style>
+    .moon-container {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #0275d8;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .moon-container:hover {
+        background-color: #025aa5;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 20px;
+        position: absolute;
+        left: 20px;
+        top: 70px;
+        transition: all 0.3s ease;
+    }
+
+    .social-btn {
+        display: flex;
+        align-items: center;
+        padding: 12px 20px;
+        margin-bottom: 15px;
+        background-color: #0275d8;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        font-size: 16px;
+    }
+
+    .social-btn:hover {
+        background-color: #025aa5;
+    }
+
+    .social-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .linkedin-btn {
+        background-color: #0077b5;
+    }
+
+    .github-btn {
+        background-color: #333;
+    }
+
+    .linkedin-btn:hover {
+        background-color: #005582;
+    }
+
+    .github-btn:hover {
+        background-color: #1b1b1b;
+    }
+
+    @media (max-width: 768px) {
+        /* Change layout to horizontal and move to top when screen size is small */
+        .social-links {
+            flex-direction: row;
+            position: relative;
+            top: 0;
+            left: 0;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .social-btn {
+            margin: 0 10px;
+        }
+
+        .moon-container {
+            top: 10px;
+            left: 10px;
+        }
+    }
+</style>
+
+    <script>
+        // Mode sombre
+        const moonContainer = document.querySelector('.moon-container');
+        moonContainer.addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('.container').classList.toggle('dark-mode');
+
+            // Apply light color for section titles in dark mode
+            document.querySelectorAll('.section-title').forEach(function (title) {
+                title.classList.toggle('dark-mode');
+            });
+        });
+
+        // Retour en haut
+        document.querySelector('.back-to-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
